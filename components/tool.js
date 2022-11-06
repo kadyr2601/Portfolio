@@ -7,9 +7,19 @@ import nextjsimg from '../public/NextjsLogo.svg'
 import golangimg from '../public/Go-Logo_Aqua.png'
 import gin from '../public/gin.png'
 import Image from "next/image";
+import {useEffect, useState} from "react";
 
 
 const Tool = () => {
+
+    const [size, setSize] = useState()
+
+    useEffect(() => {
+        const size = window.innerWidth;
+        setSize(size)
+    })
+
+
     return (
         <div className={'tool-cont'}>
             <div className={'tools container'}>
@@ -57,10 +67,13 @@ const Tool = () => {
                         <div className={'logo'}><Image src={gin} alt={''}/></div>
                         <span className={'name'}>Gin<br/>Web Framework</span>
                     </div>
-                    <div className={'tool'} style={{visibility: 'hidden'}}>
-                        <div className={'logo'}><Image src={reactimg} alt={''}/></div>
-                        <span className={'name'}>React<br/>React Native</span>
-                    </div >
+                    {size && size > 992 &&
+                        <div className={'tool'} style={{visibility: 'hidden'}}>
+                            <div className={'logo'}><Image src={reactimg} alt={''}/></div>
+                            <span className={'name'}>React<br/>React Native</span>
+                        </div >
+                    }
+
                 </div>
             </div>
         </div>

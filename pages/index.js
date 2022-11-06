@@ -7,12 +7,12 @@ import Portfolio from "../components/portfolio";
 
 export default function Home() {
   return (
-    <div>
+    <>
         <Header/>
         <About/>
         <Tool/>
-        <Portfolio/>
+        <Portfolio id={"portfolio"}/>
         <Footer/>
-    </div>
+    </>
   )
 }

@@ -4,7 +4,7 @@ export default function Document() {
     return (
         <Html>
             <Head>
-                <title>Web Title</title>
+                <title>Web - Portfolio</title>
                 <link rel="stylesheet" type="text/css" charSet="UTF-8"
                       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
                 <link rel="stylesheet" type="text/css"

@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className={'footer-cont'}>
             <div className={'container'}>
-                Footer
+                <h4 style={{textAlign: 'center'}}>© 2022 Kadyr Atamuradov. All rights reserved</h4>
             </div>
         </div>
     );

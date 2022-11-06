@@ -1,5 +1,6 @@
 import Image from "next/image";
 import me from '../public/IMG_6896.webp'
+import Link from "next/link";
 
 
 const About = () => {
@@ -13,13 +14,13 @@ const About = () => {
                 </div>
                 <div className={'right'}>
                     <h3 data-aos="fade-up">HI THERE !</h3>
-                    <h1 data-aos="fade-up">I'M A FREELANCER</h1>
+                    <h1 data-aos="fade-up">I'm Kadyr Atamuradov</h1>
                     <span data-aos="fade-up">I'm a full stack developer based in Kiev, Ukraine. I strives to build
                         immersive and beautiful web applications through carefully crafted code and user-centric design.
                     </span>
                     <div className={'btn-case'}>
                         <div className={'btn'}>MORE ABOUT ME</div>
-                        <div className={'btn'}>PORTFOLIO</div>
+                        <Link href="#portfolio" className={'btn'}>PORTFOLIO</Link>
                     </div>
                 </div>
             </div>
